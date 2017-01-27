@@ -11,7 +11,7 @@ public class DeRubyfier {
         TODO 1: Read all necessary files
         TODO 2: Deliver them to  ParserManager class (as String, list of InputStreams etc.)
          */
-        ArrayList<ANTLRInputStream> fileList = new ArrayList<ANTLRInputStream>();
+        ArrayList<ANTLRInputStream> fileList = new ArrayList<>();
         ANTLRInputStream files = null;
         try {
             files = new ANTLRInputStream(DeRubyfier.class.getResourceAsStream("/test.rb"));
