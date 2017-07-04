@@ -54,6 +54,9 @@
         <groupId>org.antlr</groupId>
         <artifactId>antlr4-maven-plugin</artifactId>
         <version>4.5</version>
+        <configuration>
+          <libDirectory>${basedir}/src/main/antlr4/com/pokeahontas/bac/DeRubyfier</libDirectory>
+        </configuration>
         <executions>
           <execution>
             <goals>
@@ -66,7 +69,7 @@
            This allows us to execute our application like this:
            java -cp target/array-init-1.0-jar-with-dependencies.jar org.abcd.examples.ArrayInit.ArrayInit
          -->
-      <plugin>
+      <!--<plugin>    AUSKOMMENTIERT DAMIT MAVEN SCHNELLER BUILDET
         <artifactId>maven-assembly-plugin</artifactId>
         <configuration>
           <descriptorRefs>
@@ -82,7 +85,8 @@
             </goals>
           </execution>
         </executions>
-      </plugin>
+      </plugin> -->
+
     </plugins>
   </build>
 </project>
