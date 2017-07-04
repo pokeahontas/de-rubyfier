@@ -1,12 +1,12 @@
 # de-rubyfier
-##Description:
+## Description:
 
 This application is ment for generating textual call graphs for Ruby on Rails projects.
 For parsing the rails source code the parser generator framework ANTLR4(http://www.antlr.org/) was used. 
 For parsing .erb files I used an existing HTML grammar from ANTLR, which I extended with some erb specific syntax 
 and I implemented a grammar for ruby code(which is by far not complete, in the sense of being a static interpreter)
 
-##Technical Details:
+## Technical Details:
 
 Here is a rough summary of what happens in the code:
 
@@ -16,7 +16,7 @@ Here is a rough summary of what happens in the code:
 - Phase 4: Again go through all ruby code and for methods that were used in erb files create function call graphs.
 
 
-##How to use:
+## How to use:
 After downloading/cloning the repository:
 1. `mvn clean install`
 2. `mvn exec:java -Dexec.mainClass=com.pokeahontas.bac.DeRubyfier.DeRubyfier`
