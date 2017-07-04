@@ -18,7 +18,9 @@ Here is a rough summary of what happens in the code:
 
 ## How to use:
 After downloading/cloning the repository:
-1. `mvn clean install`
-2. `mvn exec:java -Dexec.mainClass=com.pokeahontas.bac.DeRubyfier.DeRubyfier`
-3. Filechooser is then opened and then the app folder from a rails project should be chosen.
+1. Download and setup maven (https://maven.apache.org/)
+2. Navigate to project folder
+3. `mvn clean install`
+4. `mvn exec:java -Dexec.mainClass=com.pokeahontas.bac.DeRubyfier.DeRubyfier`
+5. Filechooser is then opened and then the app folder from a rails project should be chosen.
 Only directories named 'app' are accepted as input, as this is the standard name of the main source code folder of every rails app.
